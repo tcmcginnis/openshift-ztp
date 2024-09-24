@@ -1,0 +1,9 @@
+helm repo remove emberstack
+helm repo add emberstack https://emberstack.github.io/helm-charts
+helm repo update
+helm upgrade --install reflector emberstack/reflector --namespace reflector
+ 
+# To restart install process
+oc get ClusterRoleBinding -A|grep -i refl
+#oc delete ClusterRoleBinding reflector
+
