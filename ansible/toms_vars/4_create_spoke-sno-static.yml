@@ -48,7 +48,7 @@ cluster_nodes:
     network:
       interfaces:
         - name: eth0
-          mac_address: 00:51:56:42:06:91
+          mac_address: 00:00:00:00:00:00
           dhcp: false
           ipv4:
             - address: 10.100.59.13
